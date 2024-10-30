@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Profissional</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro-cliente.html">Cadastrar Cliente</a></li>
+                <li><a class="selecionado" href="cadastro-profissional.html">Cadastrar Profissional</a></li>
+                <li><a href="cadastro-agendamento.html">Cadastrar Agendamento</a></li>
+                <li><a href="consulta.html">Consultar Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulário de Cadastro de Profissional</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="nome">Numro Id:</label>
+                <input type="num" id="nomero_id" name="numero_id" required>
+            </div>
+            <div class="form-group">
+                <label for="documento">Documento (CPF):</label>
+                <input type="text" id="documento" name="documento" required>
+            </div>
+            <div class="form-group">
+                <label for="nome">Documento (RG):</label>
+                <input type="documento" id="documento" name="documento" required>
+            </div>
+            <div class="form-group">
+                <label for="especialidade">Especialidade:</label>
+                <select id="especialidade" name="especialidade" required>
+                    <option value="">Selecione a Especialidade</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="ortopedia">Ortopedia</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="nutricao">Nutrição</option>
+                    <option value="fisioterapia">Fisioterapia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label>Disponibilidade:</label>
+                <select id="disponibilidade" name="disponibilidade" required>
+                    <option value="">Selecione</option>
+                    <option value="integral">Integral</option>
+                    <option value="meio-periodo">Meio Período</option>
+                    <option value="plantao">Plantão</option>
+                </select>
+            </div>
+            <button onclick="cadastrarProfissional()" type="submit">Cadastrar Profissional</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Sistema de Agendamento</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
